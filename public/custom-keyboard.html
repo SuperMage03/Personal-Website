@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico">
+    <title>Custom Keyboard</title>
+
+    <!--Fonts-->
+    <script src="https://kit.fontawesome.com/c83ef652df.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Abril+Fatface&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JS/navbar.js"></script>
+    <script src="JS/modal.js"></script>
+    <script src="JS/mediaQueryHandler.js"></script>
+
+    <script>
+        window.onload = () => {
+            initializeKeyboardModal();
+        };
+    </script>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html" style="height: 80%;"><img src="Images/Logo.png" alt="Logo" id="nav-logo" style="border-radius: 50%; height: 100%;"></a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="works.html">WORKS</a></li>
+            <li id="nav-expandable-list-1" class="nav-expandable-list">
+                <a href="#" onclick="toggleNavExpandable('#nav-expandable-list-1')">HOBBIES</a>
+
+                <ul>
+                    <li><a href="overwatch.html">OVERWATCH</a></li>
+                    <li><a href="custom-keyboard.html">CUSTOM KEYBOARD</a></li>
+                    <li><a href="gaming-consoles.html">GAMING CONSOLES</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+
+
+        <div class="nav-burger" onclick="toggleNavbar()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section id="keyboard-main-section">
+        <h1>My Keyboard</h1>
+        <div>
+            <article id="tofu60-article">
+                <div class="keyboard-card">
+                    <img src="Images/Custom%20Keyboard%20Images/Tofu60/My%20Tofu60.jpg" alt="My Tofu60">
+                    <h2>Tofu60</h2>
+                    <p>
+                        My first ever build, a Tofu60 with 1976 colour wave.
+                        Light to press yet tactile, comfortable to type and not fatiguing to game with.
+                    </p>
+                    <button class="keyboard-modal-openBtn">READ MORE »</button>
+                </div>
+
+                <div class="keyboard-modal">
+                    <div class="keyboard-modal-content">
+                        <div class="modal-header">
+                            <div></div>
+                            <div><i class="fas fa-times modal-closeBtn keyboard-modal-closeBtn"></i></div>
+                        </div>
+
+                        <div class="keyboard-modal-body">
+                            <div class="keyboard-banner">
+                                <img src="Images/Custom%20Keyboard%20Images/Tofu60/My%20Tofu60%2016x9.jpg" alt="My Tofu60">
+                                <div class="keyboard-banner-text">
+                                    <h3>Keyboard Showcase</h3>
+                                    <h1>Tofu60</h1>
+                                </div>
+                            </div>
+                            <div class="tofu60-intro">
+                                <h2>Intro</h2>
+                                <p>
+                                    I have followed the custom keyboard for a while before I finally decided to build one myself.
+                                    All keyboards I've own prior to my Tofu60 are very annoying to type with and rattly, but most importantly
+                                    they were all light and cheap.
+                                </p>
+                            </div>
+                            <div class="tofu60-build-experience">
+                                <h2>Build Experience</h2>
+                                <p>
+                                    Since this is my first custom keyboard build, there were some tricky stuff like having a consistent
+                                    amount of dielectric grease for each switch. But for the most part, it went really well.
+                                </p>
+
+                                <h3>Case</h3>
+                                <p>
+                                    I chose to go with the Tofu60 case from KBDfans. This case is all aluminum, feels sturdy and heavy.
+                                    One of the most popular beginner case, it's also compact with only 60% the size of a full size keyboard.
+                                    In addition, I added some foam to the case to dampen the sound.
+                                </p>
+
+                                <h3>Switch</h3>
+                                <div id="tofu60-switch-content">
+                                    <p>
+                                        I always loved keyboards with tactility but not loud and clicky, this is why I used Zealio V2 as the switch of my first build.
+                                        <br><br>
+                                        I went with the 62g spring version because it's light to code with and not too fatiguing when gaming.
+                                        <br><br>
+                                        The switch is also applied with Trbisosy 3204 for better smoothness, it's also filmed with Deskey films to reduce housing wobble for better sounding.
+                                    </p>
+                                    <img src="Images/Custom%20Keyboard%20Images/Tofu60/My%20Tofu60%20Switches.jpg" alt="Tofu60 Switches">
+                                </div>
+
+                                <h3>Plate</h3>
+                                <p>
+                                    I went with a brass plate because brass plate makes the keyboard sound more clacky and that's what I'm going for.
+                                    I also cut some neoprene foam strips and adhere them on the plate to dampen the sound a bit more.
+                                </p>
+
+                                <h3>PCB</h3>
+                                <p>
+                                    For PCB, I went with the DZ60, this PCB is very versatile and cheap, with support of many key layouts as well as easy key programming.
+                                    The only downside is that the keys has to be soldered on, which means I have to unsolder switches if I want to replace them.
+                                    But, I have a lot of experience with soldering from fixing gaming consoles so that wasn't a big deal for me.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-icons">
+        <a href="mailto: contact@estonli.ca"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/SuperMage03"  target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.youtube.com/channel/UCenqEx0Lw5mRrT_IvjHX7Bg" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://devpost.com/SuperMage03" target="_blank"><img src="Images/Devpost%20Icon.svg" alt="Devpost Icon" id="devpost-icon"></a>
+    </div>
+    <div class="footer-info">
+        <p>Copyright © 2021 Eston Li</p>
+    </div>
+</footer>
+
+</body>
+</html>

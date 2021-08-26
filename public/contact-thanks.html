@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico">
+    <title>Sent!</title>
+
+    <!--Fonts-->
+    <script src="https://kit.fontawesome.com/c83ef652df.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JS/navbar.js"></script>
+    <script src="JS/mediaQueryHandler.js"></script>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html" style="height: 80%;"><img src="Images/Logo.png" alt="Logo" id="nav-logo" style="border-radius: 50%; height: 100%;"></a>
+
+
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="works.html">WORKS</a></li>
+            <li id="nav-expandable-list-1" class="nav-expandable-list">
+                <a href="#" onclick="toggleNavExpandable('#nav-expandable-list-1')">HOBBIES</a>
+
+                <ul>
+                    <li><a href="overwatch.html">OVERWATCH</a></li>
+                    <li><a href="custom-keyboard.html">CUSTOM KEYBOARD</a></li>
+                    <li><a href="gaming-consoles.html">GAMING CONSOLES</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+
+
+        <div class="nav-burger" onclick="toggleNavbar()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+</header>
+
+<main style="display: flex; align-items: center; justify-content: center;">
+    <div style="display:flex; flex-direction: column; align-items: center">
+        <img src="Images/Mail%20Sent%20Icon.png" alt="Mail Sent Icon" style="height: 23vh; min-height: 125px">
+        <h2 style="font-family: var(--primaryFont), 'sans-serif'; color: var(--velvetColour); padding: 4vh 0 15px 0;">
+            Thank You for Reaching Out!
+        </h2>
+        <p style="font-family: var(--secondaryFont), 'sans-serif'; color: var(--pinkColour); margin-bottom: 25px;">
+            Follow-up will occur within 24 hours
+        </p>
+
+        <a href="index.html" style="width: 7rem; height: 3rem; border-radius: 7%; margin-bottom: 25px;" class="darkPeachButton">
+            To Home
+        </a>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-icons">
+        <a href="mailto: contact@estonli.ca"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/SuperMage03"  target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.youtube.com/channel/UCenqEx0Lw5mRrT_IvjHX7Bg" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://devpost.com/SuperMage03" target="_blank"><img src="Images/Devpost%20Icon.svg" alt="Devpost Icon" id="devpost-icon"></a>
+    </div>
+    <div class="footer-info">
+        <p>Copyright © 2021 Eston Li</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico">
+    <title>My Works</title>
+
+    <!--Fonts-->
+    <script src="https://kit.fontawesome.com/c83ef652df.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JS/navbar.js"></script>
+    <script src="JS/mediaQueryHandler.js"></script>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html" style="height: 80%;"><img src="Images/Logo.png" alt="Logo" id="nav-logo" style="border-radius: 50%; height: 100%;"></a>
+
+
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="works.html">WORKS</a></li>
+            <li id="nav-expandable-list-1" class="nav-expandable-list">
+                <a href="#" onclick="toggleNavExpandable('#nav-expandable-list-1')">HOBBIES</a>
+
+                <ul>
+                    <li><a href="overwatch.html">OVERWATCH</a></li>
+                    <li><a href="custom-keyboard.html">CUSTOM KEYBOARD</a></li>
+                    <li><a href="gaming-consoles.html">GAMING CONSOLES</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+
+
+        <div class="nav-burger" onclick="toggleNavbar()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+</header>
+
+
+<main>
+    <section id="project-container">
+        <article class="project-card">
+            <img src="Images/Project%20Images/Batman%20Last%20Crusade%20Image.png" alt="Batman: Last Crusade Image">
+            <h2>Batman: Last Crusade</h2>
+            <p>
+                Made for my Grade 11 FSE from Unity. The game is about using grappling and gliding to collect the Riddler's Trphies. Some assets are from Batman Arkham Game Series by WB Games, used for Educational Purpose only.
+            </p>
+            <a href="https://github.com/SuperMage03/Batman-Last-Crusade" target="_blank">Check it Out</a>
+        </article>
+
+        <article class="project-card">
+            <img src="Images/Project%20Images/ChessFSE%20Image.png" alt="ChessFSE Image">
+            <h2>ChessFSE</h2>
+            <p>
+                This Chess game is created for my Grade 12 FSE. It has an AI run by Minimax and Alpha-beta pruning algorithm.
+                The game also contains a scoreboard and supports 2 player game as well. Created with Java Swing.
+            </p>
+            <a href="https://github.com/SuperMage03/ChessFSE" target="_blank">Check it Out</a>
+        </article>
+
+        <article class="project-card">
+            <img src="Images/Project%20Images/Jimmy%20Image.png" alt="Jimmy Image">
+            <h2>Jimmy</h2>
+            <p>
+                Jimmy is an FPS game I created with my friend Shengbuo for my school's 7 Week Challenge Game Jam Week.
+                The game's objective is to shoot your way out of the zombie mazes and defeat the Boss. This game is made with Unity.
+            </p>
+            <a href="https://github.com/SuperMage03/Batman-Last-Crusade" target="_blank">Check it Out</a>
+        </article>
+
+        <article class="project-card">
+            <img src="Images/Project%20Images/Matrix%20of%20Heroes%20Image.png" alt="Matrix of Heroes Image">
+            <h2>Matrix of Heroes</h2>
+            <p>
+                Matrix of Heroes is made from Unity with Shengbuo, Angela, and Lily. We created this game for Defhacks 2020 and won
+                the beginners hack award. This game helps kids learn math and use it to do damage and beat levels. In addition,
+                teachers can track down students' progress.
+            </p>
+            <a href="https://github.com/SuperMage03/Matrix-of-Heroes" target="_blank">Check it Out</a>
+        </article>
+
+        <article class="project-card">
+            <img src="Images/Project%20Images/OverPaint%20Image.png" alt="OverPaint Image">
+            <h2>OverPaint</h2>
+            <p>
+                This is an Overwatch themed MS Paint like program I built during my Grade 11 Comp Sci Class as a project.
+                It features customizable background, multiple painting tools, stickers, save/load, undo/redo, filters,
+                as well as a built-in music player. This program was made with PyGame.
+            </p>
+            <a href="https://github.com/SuperMage03/OverPaint" target="_blank">Check it Out</a>
+        </article>
+
+        <article class="project-card">
+            <img src="Images/Project%20Images/Tron%20Image.png" alt="Tron Image">
+            <h2>Tron</h2>
+            <p>
+                This is my vision of the classic Arcade game Tron. Built from Java Swing, the game has Single-Player and Multiplayer mode,
+                as well as a built-in scoreboard like the classic one. In addition to the classic gameplay, this version of Tron has explosives
+                and time rewind.
+            </p>
+            <a href="https://github.com/SuperMage03/Tron" target="_blank">Check it Out</a>
+        </article>
+
+        <article class="project-card">
+            <img src="Images/Project%20Images/Vertical%20Carousel%20Image.png" alt="Vertical Carousel Image">
+            <h2>Vertical Carousel</h2>
+            <p>
+                This is a simple Vertical Carousel Plugin that allows pictures to be looped, and only loads pictures that users can see
+                for optimal performance. It's also Responsive, you can set the width and height to any value or unit. This plugin is built
+                mainly with JS and some CSS.
+            </p>
+            <a href="https://github.com/SuperMage03/Responsive-Vertical-Carousel" target="_blank">Check it Out</a>
+        </article>
+
+        <article class="project-card">
+            <img src="Images/Project%20Images/Data%20Structures%20Image.jpg" alt="Data Structures Image">
+            <h2>Java Data Structures</h2>
+            <p>
+                This is my adventure to build data structures from scratch. I always wanted to see how each data structure works,
+                as well as why they are good at some stuff and bad at others. This project also helped me understand more about
+                time and space complexity.
+            </p>
+            <a href="https://github.com/SuperMage03/Data-Structures-from-Scratch" target="_blank">Check it Out</a>
+        </article>
+
+        <article class="project-card">
+            <img src="Images/Project%20Images/Retro%20Tasker%20Image.png" alt="Retro Tasker Image">
+            <h2>Retro Tasker</h2>
+            <p>
+                This is my first web app created for my school's 7 Week Challenge Web Dev Week. Retro Tasker is created with
+                Express for back-end, HTML/CSS/JS for front-end, and JSNES for NES emulation. The app allows user to create tasks,
+                and check-in on time to earn play times for NES.
+            </p>
+            <a href="https://github.com/SuperMage03/Retro-Tasker" target="_blank">Check it Out</a>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-icons">
+        <a href="mailto: contact@estonli.ca"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/SuperMage03"  target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.youtube.com/channel/UCenqEx0Lw5mRrT_IvjHX7Bg" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://devpost.com/SuperMage03" target="_blank"><img src="Images/Devpost%20Icon.svg" alt="Devpost Icon" id="devpost-icon"></a>
+    </div>
+    <div class="footer-info">
+        <p>Copyright © 2021 Eston Li</p>
+    </div>
+</footer>
+
+</body>
+</html>

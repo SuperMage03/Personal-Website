@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico">
+    <title>Contact Me</title>
+
+    <!--Fonts-->
+    <script src="https://kit.fontawesome.com/c83ef652df.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JS/navbar.js"></script>
+    <script src="JS/mediaQueryHandler.js"></script>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html" style="height: 80%;"><img src="Images/Logo.png" alt="Logo" id="nav-logo" style="border-radius: 50%; height: 100%;"></a>
+
+
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="works.html">WORKS</a></li>
+            <li id="nav-expandable-list-1" class="nav-expandable-list">
+                <a href="#" onclick="toggleNavExpandable('#nav-expandable-list-1')">HOBBIES</a>
+
+                <ul>
+                    <li><a href="overwatch.html">OVERWATCH</a></li>
+                    <li><a href="custom-keyboard.html">CUSTOM KEYBOARD</a></li>
+                    <li><a href="gaming-consoles.html">GAMING CONSOLES</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+
+
+        <div class="nav-burger" onclick="toggleNavbar()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div id="contact-container">
+        <form action="https://formsubmit.co/contact@estonli.ca" method="POST">
+            <div id="contact-name">
+                <div class="contact-form-group">
+                    <label for="first-name">First Name</label>
+                    <input id="first-name" type="text" name="first-name" required>
+                </div>
+
+                <div class="contact-form-group">
+                    <label for="last-name">Last Name</label>
+                    <input id="last-name" type="text" name="last-name" required>
+                </div>
+            </div>
+
+            <div class="contact-form-group">
+                <label for="email">E-Mail</label>
+                <input id="email" type="email" name="email" required>
+            </div>
+
+            <div class="contact-form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" cols="30" rows="10" required></textarea>
+            </div>
+
+            <input type="hidden" name="_next" value="https://estonli.ca/contact-thanks.html">
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-icons">
+        <a href="mailto: contact@estonli.ca"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/SuperMage03"  target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.youtube.com/channel/UCenqEx0Lw5mRrT_IvjHX7Bg" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://devpost.com/SuperMage03" target="_blank"><img src="Images/Devpost%20Icon.svg" alt="Devpost Icon" id="devpost-icon"></a>
+    </div>
+    <div class="footer-info">
+        <p>Copyright © 2021 Eston Li</p>
+    </div>
+</footer>
+
+</body>
+</html>

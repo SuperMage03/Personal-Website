@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico">
+    <title>Gaming Consoles</title>
+
+    <!--Fonts-->
+    <script src="https://kit.fontawesome.com/c83ef652df.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Abril+Fatface&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JS/mediaQueryHandler.js"></script>
+    <script src="JS/navbar.js"></script>
+    <script src="JS/modal.js"></script>
+
+    <!--Swiper JS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        window.onload = () => {
+            initializeConsoleModal();
+        };
+    </script>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html" style="height: 80%;"><img src="Images/Logo.png" alt="Logo" id="nav-logo" style="border-radius: 50%; height: 100%;"></a>
+
+
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="works.html">WORKS</a></li>
+            <li id="nav-expandable-list-1" class="nav-expandable-list">
+                <a href="#" onclick="toggleNavExpandable('#nav-expandable-list-1')">HOBBIES</a>
+
+                <ul>
+                    <li><a href="overwatch.html">OVERWATCH</a></li>
+                    <li><a href="custom-keyboard.html">CUSTOM KEYBOARD</a></li>
+                    <li><a href="gaming-consoles.html">GAMING CONSOLES</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+
+
+        <div class="nav-burger" onclick="toggleNavbar()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section id="consoles-main-section">
+        <h1>My Collection</h1>
+        <div class="console-collection-carousel">
+            <div class="swiper-wrapper">
+                <article class="swiper-slide">
+                    <img src="Images/Gaming%20Console%20Images/Xbox%20360%20Slim/My%20Xbox%20360%20Slim.jpg" alt="My Xbox 360 Slim">
+                    <div>
+                        <h3 class="console-carousel-text">Xbox 360, Dual Nand, S-RGH with SMC+</h3>
+                    </div>
+                </article>
+
+                <article class="swiper-slide">
+                    <img src="https://www.sony.ca/image/c8a930c97af5746b7120d4b639cfe813?fmt=png-alpha&wid=440&hei=440" alt="Sony Camera">
+                </article>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="console-modal-background">
+            <div class="console-modal-content">
+                <div class="modal-header">
+                    <div></div>
+                    <div><i class="fas fa-times modal-closeBtn console-modal-closeBtn"></i></div>
+                </div>
+                <div class="console-modal-carousel">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="Images/Gaming%20Console%20Images/Xbox%20360%20Slim/My%20Xbox%20360%20Slim%2016x9.jpg" alt="My Xbox 360 Slim">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="Images/Gaming%20Console%20Images/Xbox%20360%20Slim/Ace%20V3.jpg" alt="Ace V3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="Images/Gaming%20Console%20Images/Xbox%20360%20Slim/Viper%20Dual%20Nand%20Close-Up.jpg" alt="Viper Dual Nand">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <div class="console-modal-body">
+                    <div class="console-modal-body-content">
+                        <h2>Xbox 360 Slim</h2>
+                        <p>This Xbox 360 is fully modded with S-RGH and SMC+ speed-up. It also has dual nand, which allows it to boot up to the latest firmware or the old NXE firmware.</p>
+                    </div>
+
+                    <div class="console-modal-body-content">
+                        <h2>Ace V3</h2>
+                        <p>This chip allows the Xbox 360 to be RGHed, it's programmed with the S-RGH method with SMC+ glitch speed-up.</p>
+                    </div>
+
+                    <div class="console-modal-body-content">
+                        <h2>Viper Dual Nand V2</h2>
+                        <p>With the Viper Dual Nand V2 chip, it allows the console to have another firmware. I loaded this chip with the old NXE firmware.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="console-modal-content">
+                <div class="modal-header">
+                    <div></div>
+                    <div><i class="fas fa-times modal-closeBtn console-modal-closeBtn"></i></div>
+                </div>
+                <div class="console-modal-carousel">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="Images/Gaming%20Console%20Images/Xbox%20360%20Slim/My%20Xbox%20360%20Slim%2016x9.jpg" alt="My Xbox 360 Slim">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="Images/Gaming%20Console%20Images/Xbox%20360%20Slim/Ace%20V3.jpg" alt="Ace V3">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <div class="console-modal-body">
+                    <div class="console-modal-body-content">
+                        <h2>asdasd</h2>
+                        <p></p>
+                    </div>
+
+                    <div class="console-modal-body-content">
+                        <h2>vvva</h2>
+                        <p></p>
+                    </div>
+
+                    <div class="console-modal-body-content">
+                        <h2>cccs</h2>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-icons">
+        <a href="mailto: contact@estonli.ca"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/SuperMage03"  target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.youtube.com/channel/UCenqEx0Lw5mRrT_IvjHX7Bg" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://devpost.com/SuperMage03" target="_blank"><img src="Images/Devpost%20Icon.svg" alt="Devpost Icon" id="devpost-icon"></a>
+    </div>
+    <div class="footer-info">
+        <p>Copyright © 2021 Eston Li</p>
+    </div>
+</footer>
+
+<script src="JS/swiperJS.js"></script>
+
+</body>
+</html>
