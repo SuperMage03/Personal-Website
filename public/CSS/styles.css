@@ -569,7 +569,7 @@ a.darkPeachButton:hover {
     position: absolute;
     left: 50%;
     top: 87%;
-    transform: translate(-55%, -50%);
+    transform: translate(-50%, -50%);
     cursor: pointer;
 
     font-size: 4rem;
@@ -879,7 +879,12 @@ a.darkPeachButton:hover {
     position: relative;
     max-width: 1200px;
     width: 90%;
+
     margin: auto;
+}
+
+.console-collection-carousel .swiper-slide:only-child {
+    margin-bottom: 20px;
 }
 
 .console-collection-carousel .swiper-pagination {
@@ -964,6 +969,7 @@ a.darkPeachButton:hover {
     cursor: pointer;
 
     border: solid 1px var(--darkPeachColour);
+    box-shadow: 0 0 10px var(--darkPeachColour);
     background-color: hsla(44, 87%, 94%, 0.4);
 }
 
@@ -1280,6 +1286,10 @@ a.darkPeachButton:hover {
         transition-property: max-height, transform;
         transition-duration: 400ms;
         transition-timing-function: ease-in-out;
+    }
+
+    .nav-expandable-list > ul > li > a {
+        padding: 0;
     }
 
     .nav-expandable-list-active > a:after {
