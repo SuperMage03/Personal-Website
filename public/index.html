@@ -20,6 +20,9 @@
 
     <script src="JS/navbar.js"></script>
     <script src="JS/mediaQueryHandler.js"></script>
+
+    <!--Swiper JS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -56,14 +59,24 @@
 
 <main>
     <section>
-<!--        <div style="background-image: url("./Images/Home Background"); height: calc(100vh - 85px - 150px); color: var(&#45;&#45;pinkColour);">-->
-<!--            <h1>asdasdasdasd</h1>-->
-<!--            <p>TSADASDASDSDAASDXCSAD</p>-->
-<!--        </div>        -->
-        <div style="height: calc(100vh - 85px - 150px); color: var(--pinkColour); display: flex; justify-content: center; align-items: center; flex-direction: column">
-            <h1>asdasdasdasd</h1>
-            <h1>Home Page Overrated</h1>
-            <p>TSADASDASDSDAASDXCSAD</p>
+        <div id="homepage-container">
+            <h1 style="color: var(--darkPeachColour)">Welcome!</h1>
+            <div>
+                <span>Hello,</span>
+                <span>I'm Eston</span>
+            </div>
+            <div>
+                <div>I Love&nbsp;</div>
+                <div class="homepage-cube">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Making Games</div>
+                        <div class="swiper-slide">Creating Websites</div>
+                        <div class="swiper-slide">Playing Overwatch</div>
+                        <div class="swiper-slide">Customizing Electronics</div>
+                        <div class="swiper-slide">Building Keyboards</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </main>
@@ -79,6 +92,27 @@
         <p>Copyright © 2021 Eston Li</p>
     </div>
 </footer>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.homepage-cube', {
+        loop: true,
+        effect: "cube",
+        cubeEffect: {
+            shadow: false,
+            slideShadows: false,
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        direction: 'vertical',
+        mousewheelControl: true,
+        slidesPerView: 1,
+        grabCursor: true,
+    });
+</script>
 
 </body>
 

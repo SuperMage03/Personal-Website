@@ -1156,6 +1156,47 @@ a.darkPeachButton:hover {
     display: block;
 }
 
+#homepage-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    height: max(calc(100vh - 85px), 450px);
+    background: linear-gradient(to bottom right, var(--greenColour) 25%, var(--greenColour));
+    color: var(--darkPeachColour);
+    padding-left: clamp(2rem, 5vw, 8rem);
+}
+
+#homepage-container > h1 {
+    /*font-size: clamp(2rem, 5vw, 4rem);*/
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: bold;
+    font-family: var(--secondaryFont), sans-serif;
+}
+
+#homepage-container > div:nth-child(2) {
+    font-size: clamp(1.6rem, 4vw, 3rem);
+    font-weight: bold;
+    font-family: var(--secondaryFont), sans-serif;
+}
+
+#homepage-container > div:nth-child(2) > span:last-child {
+    color: var(--velvetColour);
+}
+
+#homepage-container > div:nth-child(3) {
+    display: flex;
+    font-size: clamp(1.6rem, 4vw, 3rem);
+    font-weight: bold;
+    font-family: var(--secondaryFont), sans-serif;
+}
+
+.homepage-cube {
+    height: 1em;
+    color: var(--velvetColour);
+}
+
 
 /* Mid width size screen */
 @media screen and (max-width: 1250px) {
@@ -1413,5 +1454,15 @@ a.darkPeachButton:hover {
     }
     to {
         top: 87%;
+    }
+}
+
+@keyframes homepage-cube-scroll {
+    0% {
+
+    }
+
+    100% {
+
     }
 }
